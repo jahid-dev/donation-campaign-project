@@ -47,7 +47,7 @@ const HomeCard = ({ donate }) => {
 };
 
 HomeCard.propTypes = {
-  donate : PropTypes.string
+  donate : PropTypes.object
 }
 
 export default HomeCard;

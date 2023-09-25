@@ -12,6 +12,6 @@ const HomeCardMain = ({ donates }) => {
   );
 };
 HomeCardMain.propTypes = {
-    donates : PropTypes.object
+    donates : PropTypes.array
   }
 export default HomeCardMain;
