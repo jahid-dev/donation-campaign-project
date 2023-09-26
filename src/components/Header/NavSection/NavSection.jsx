@@ -1,13 +1,15 @@
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import "./NavSection.css"
 const NavSection = () => {
     return (
         <div>
-            <div className="div flex flex-row justify-between items-center my-10">
-                <h1 className="text-5xl font-extrabold">Donation</h1>
+            <div className="div flex justify-between md:flex-row flex-col md:space-y-0 space-y-5 my-10 items-center">
+                <Link to={"/"}>
+                    <img src="Images/Logo.png" alt="" className="" />
+                </Link>
                 <div className="space-x-5 font-medium">
                     <NavLink to={"/"}>Home</NavLink>
-                    <NavLink to={"/donation"}>Donation</NavLink>
+                    <NavLink to={"/donations"}>Donation</NavLink>
                     <NavLink to={"/statistics"}>Statistics</NavLink>
                 </div>
             </div>
