@@ -23,7 +23,7 @@ const DonationDescription = () => {
       Swal.fire({
         position: "top-end",
         icon: "success",
-        title: "Your Donation Success",
+        title: "Thanks! For Your Donation",
         showConfirmButton: false,
         timer: 1500,
       });
@@ -36,7 +36,7 @@ const DonationDescription = () => {
         Swal.fire({
           position: "top-end",
           icon: "success",
-          title: "Your Donation Success",
+          title: "Thanks! For Your Donation",
           showConfirmButton: false,
           timer: 1500,
         });
@@ -44,7 +44,7 @@ const DonationDescription = () => {
         Swal.fire({
           position: "top-end",
           icon: "error",
-          title: "Already Donated",
+          title: "Wow! You Previously Donated",
           showConfirmButton: false,
           timer: 1500,
         });

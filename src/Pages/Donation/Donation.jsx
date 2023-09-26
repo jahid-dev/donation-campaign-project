@@ -3,7 +3,7 @@ import DonationCardMain from "../../components/DonationCard/DonationCardMain";
 import { useLoaderData } from "react-router-dom";
 
 const Donation = () => {
-  const { data } = useLoaderData();
+   useLoaderData();
 
   const [donated, setDonated] = useState([]);
   const [noData, setNoData] = useState(false);
