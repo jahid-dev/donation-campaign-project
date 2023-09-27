@@ -1,11 +1,7 @@
 import PropTypes from 'prop-types';
-import  { useState } from "react";
 import { Link } from 'react-router-dom';
 
-
 const HomeCard = ({ donate }) => {
-  const [donated, setDonated] = useState([]);
-
   const {
     id,
     title,
@@ -15,8 +11,6 @@ const HomeCard = ({ donate }) => {
     picture,
     text_button_bg,
   } = donate;
- 
- 
 
   return (
     <Link to={`/donation/${id}`}>
@@ -42,7 +36,7 @@ const HomeCard = ({ donate }) => {
 };
 
 HomeCard.propTypes = {
-  donate : PropTypes.object
-}
+  donate: PropTypes.object.isRequired,
+};
 
 export default HomeCard;

@@ -1,22 +1,22 @@
-import  { useState } from "react";
 
-const Hero = ({ data }) => {
+import PropTypes from 'prop-types';
+import { useState } from "react";
+
+
+const HeroSection = ({ filter }) => {
   const [searchData, setSearchData] = useState("");
-  const [filterData, setFilterData] = useState([]);
-
+  
   const handleSearch = () => {
-    const filterSearchData = data.filter(
-      (item) => item.category === searchData
-    );
-    setFilterData(filterSearchData);
+    filter(searchData)
+    
   };
 
   return (
-    <div className="md:h-[350px] h-[300px] gap-6 flex flex-col items-center justify-center ">
+    <div className="md:h-[350px] h-[300px] gap-6 flex flex-col items-center justify-center">
       <h1 className="md:text-5xl text-3xl text-center mb-6 font-extrabold">
         I Grow By Helping People In Need
       </h1>
-      <div className=" md:flex-none flex rounded-md">
+      <div className="md:flex-none flex rounded-md">
         <input
           onChange={(e) => setSearchData(e.target.value)}
           type="text"
@@ -34,4 +34,15 @@ const Hero = ({ data }) => {
   );
 };
 
-export default Hero;
+
+HeroSection.propTypes = {
+  filter: PropTypes.func
+};
+
+export default HeroSection;
+
+
+
+
+
+

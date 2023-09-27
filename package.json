@@ -17,7 +17,8 @@
     "react-router-dom": "^6.16.0",
     "recharts": "^2.8.0",
     "sort-by": "^0.0.2",
-    "sweetalert2": "^11.6.13"
+    "sweetalert2": "^11.6.13",
+    "tailgrids": "^2.0.3"
   },
   "devDependencies": {
     "@types/react": "^18.2.15",
