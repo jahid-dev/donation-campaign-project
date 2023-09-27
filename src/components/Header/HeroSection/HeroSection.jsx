@@ -12,6 +12,9 @@ const HeroSection = ({ filter }) => {
   };
 
   return (
+    <div className="relative h-[70vh]">
+    <div className="absolute inset-0 z-0 bg-[url('https://i.ibb.co/4Ws5tkV/Rectangle-4287.png')] opacity-20 bg-cover bg-center"></div>
+    <div className="flex flex-col items-center justify-center h-full relative">
     <div className="md:h-[350px] h-[300px] gap-6 flex flex-col items-center justify-center">
       <h1 className="md:text-5xl text-3xl text-center mb-6 font-extrabold">
         I Grow By Helping People In Need
@@ -30,6 +33,8 @@ const HeroSection = ({ filter }) => {
           Search
         </button>
       </div>
+    </div>
+    </div>
     </div>
   );
 };

@@ -38,7 +38,6 @@ const PieCompo = ({ data }) => {
     const donated = JSON.parse(localStorage.getItem("donates"));
     if (donated === null) {
       setFinalLength(0);
-      console.log("Ami null");
     } else {
       const donatedLenth = donated.length;
       setFinalLength(donatedLenth);
