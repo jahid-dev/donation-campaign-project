@@ -1,8 +1,7 @@
-# React + Vite
+This project appears to be a web application for managing and viewing donations. Here are three features of this project:
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+1.Responsive Design: The project follows a design created in Figma and ensures a responsive web layout. This means the website will adapt to different screen sizes and devices, providing a seamless user experience on both desktop and mobile devices. The responsive design ensures that users can access the website and view donation details from any device.
 
-Currently, two official plugins are available:
+2.Dynamic Routing and Donation Details: The project implements dynamic routing, allowing users to click on a donation card on the homepage and be redirected to a dedicated "Donation Details" page. On this page, users can view detailed information about a specific donation, including a picture, title, description, and the option to donate. The dynamic routing and detailed donation information enhance the user experience by providing comprehensive information about each donation.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+3.Visual Consistency and Theming: The project maintains visual consistency throughout the website. It features a consistent color scheme and design elements, ensuring that the background colors, text colors, and button styles match the predefined design in Figma. This attention to visual consistency creates an aesthetically pleasing and professional-looking website that aligns with the provided design guidelines.
